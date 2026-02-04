@@ -59,7 +59,9 @@ hr {
 
 .about-photo img {
     width: 350px;
+    max-width: 100%;
     height: auto;
+    padding: 3px;
 }
 
 /* Link style */
@@ -81,3 +83,25 @@ h3 {
 ul {
     padding-left: 1.2rem;
 }
+
+/* Responsive layout for tablets/phones */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    .about-block {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .about-photo {
+        text-align: center;
+    }
+
+    nav {
+        font-size: 0.95rem;
+    }
+}
+
