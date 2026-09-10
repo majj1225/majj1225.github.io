@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+span {
+  display: block;
+  text-align: right;
+}
+
 .container {
     max-width: 820px;
     margin: 0 auto;
@@ -49,8 +54,12 @@ hr {
 .about-block {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; /* Keeps text at the top */
     gap: 2rem;
+}
+
+.about-photo {
+    align-self: center; /* Centers just the photo vertically */
 }
 
 .about-text {
@@ -58,7 +67,7 @@ hr {
 }
 
 .about-photo img {
-    width: 350px;
+    width: 320px;
     max-width: 100%;
     height: auto;
     padding: 3px;
